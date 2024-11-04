@@ -172,7 +172,7 @@ function Register() {
             className="mt-5 bg-yellow-400 px-4 py-2 rounded-md w-full focus:outline-none"
             onClick={() => Navigate("/")}
           >
-            Registrar
+            Cadastrar
           </button>
         </form>
       </main>
