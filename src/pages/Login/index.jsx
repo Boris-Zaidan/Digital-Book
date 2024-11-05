@@ -7,8 +7,8 @@ import Footer from "../../Components/Footer";
 function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-  const emailRef = useRef(null);
-  const senhaRef = useRef(null);
+  const emailRef = useRef();
+  const senhaRef = useRef();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -23,13 +23,13 @@ function Login() {
   };
 
   return (
-    <div className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 grid-rows-6 bg-stone-300 overflow-hidden">
+    <div className="w-screen h-screen grid  grid-cols-1  md:grid-cols-2 grid-rows-6 bg-stone-300 overflow-hidden">
       <div className="row-span-5 md:flex justify-end items-center hidden">
         <header>
           <img className="max-w-sm" src={Logo} alt="imagem da logo" />
         </header>
       </div>
-      <section className="mx-auto row-span-5 flex justify-center items-start flex-col px-4 sm:w-80">
+      <section className=" row-span-5 flex justify-center items-start flex-col px-4 sm:w-80  mx-auto sm:mx-0 ">
         <form
           className="sm:w-80 flex flex-col md:justify-end justify-center items-center border rounded-md px-10 py-5 gap-5"
           onSubmit={handleSubmit}
@@ -83,7 +83,7 @@ function Login() {
               <button
                 className="mt-4 cursor-pointer font-normal bg-gray-500 text-yellow-400 w-6/12 h-8 rounded-sm hover:bg-gray-700"
                 type="button"
-                onClick={() => navigate("/Register")}
+                onClick={() => navigate("/Cadastro")}
               >
                 Cadastrar-se
               </button>
