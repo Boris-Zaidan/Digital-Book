@@ -7,6 +7,7 @@ function InputFields({
   onChange,
   placeholder,
   required = false,
+  name,
 }) {
   return (
     <div>
@@ -18,6 +19,7 @@ function InputFields({
         placeholder={placeholder}
         onChange={onChange}
         required={required}
+        name={name}
       />
     </div>
   );

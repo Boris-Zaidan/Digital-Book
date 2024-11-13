@@ -61,7 +61,7 @@ function Cadastro() {
       </div>
       <main className="w-10/12 md:w-4/5 mx-auto flex justify-center items-center mt-10 border rounded-md">
         <form
-          className="sm:w-full md:w-7/10 flex flex-col md:justify-end justify-center items-center px-10 py-3 gap-5"
+          className="sm:w-full md:w-7/10 flex flex-col md:justify-end justify-center items-center mt-4 px-10 py-3 gap-5"
           onSubmit={handleSubmit}
         >
           <div className="w-full">
@@ -124,7 +124,7 @@ function Cadastro() {
           </div>
           <button
             type="submit"
-            className="mt-5 bg-yellow-400 px-4 py-2 rounded-md w-full focus:outline-none"
+            className="my-3 bg-yellow-400 px-4 py-2 rounded-md w-full focus:outline-none"
           >
             Cadastrar
           </button>
