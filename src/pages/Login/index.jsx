@@ -29,6 +29,9 @@ function Login() {
       localStorage.setItem("token", token);
       alert("Usuário Logado com sucesso!");
       setFormData({ email: "", password: "" });
+
+      //posso ir para lista de usuários ou enviar email
+      navigate("/Lista");
     } catch (error) {
       alert("Senha ou email inválido ");
       console.error(error);
