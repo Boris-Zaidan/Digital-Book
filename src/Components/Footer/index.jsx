@@ -1,7 +1,12 @@
 import React from "react";
 
 function Footer() {
-  return <div>@2024 Dev Boris Zaidan</div>;
+  const currentYear = new Date().getFullYear();
+  return (
+    <div>
+      <p>Desenvolvido por Boris Zaidan &copy; {currentYear}</p>
+    </div>
+  );
 }
 
 export default Footer;

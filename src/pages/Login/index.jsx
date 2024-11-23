@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import api from "../../Services/Api.js";
 import Logo from "../../assets/login.png";
 import CampoInput from "../../Components/Input";
@@ -71,9 +71,12 @@ function Login() {
               name="password"
             />
             <div className="mt-3 flex justify-end items-center">
-              <a className="cursor-pointer text-blue-950" href="#">
+              <Link
+                to="/forgot-password"
+                className="cursor-pointer text-blue-950"
+              >
                 Esqueceu a senha?
-              </a>
+              </Link>
             </div>
             <div>
               <button
