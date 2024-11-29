@@ -39,7 +39,7 @@ function Login() {
   };
 
   return (
-    <div className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 grid-rows-6 bg-stone-300 overflow-hidden">
+    <div className="w-screen h-screen grid grid-cols-1 md:grid-cols-2 grid-rows-6 bg-slate-50/80 overflow-hidden">
       <div className="row-span-5 md:flex justify-end items-center hidden">
         <header>
           <img className="max-w-sm" src={Logo} alt="imagem da logo" />
@@ -72,8 +72,8 @@ function Login() {
             />
             <div className="mt-3 flex justify-end items-center">
               <Link
-                to="/forgot-password"
-                className="cursor-pointer text-blue-950"
+                to="/Forgot"
+                className="cursor-pointer text-blue-950 hover:border-b-2 hover:border-gray-900y"
               >
                 Esqueceu a senha?
               </Link>
@@ -98,7 +98,7 @@ function Login() {
           </div>
         </form>
       </section>
-      <div className="fixed mx-auto bottom-0 w-full flex justify-center bg-stone-300">
+      <div className="fixed mx-auto bottom-0 w-full flex justify-center  bg-stone-300 font-semibold p-3">
         <Footer />
       </div>
     </div>

@@ -55,32 +55,36 @@ function Cadastro() {
   }
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center flex-col bg-stone-300 overflow-hidden">
-      <div className="fixed top-0 w-full flex justify-center flex-wrap bg-yellow-400">
+    <div className="w-screen h-screen flex flex-col bg-white/90 overflow-hidden">
+      <header className="fixed top-0 w-full flex justify-center flex-wrap bg-yellow-400 z-10">
         <h1 className="text-lg p-3 font-medium">Cadastro De Funcionários</h1>
-      </div>
-      <main className="w-10/12 md:w-4/5 mx-auto flex justify-center items-center mt-10 border rounded-md">
+      </header>
+
+      <main className="w-[92%] mt-2 sm:h-[90%] md:w-4/5 mx-auto sm:mt-1 flex justify-center items-center ">
         <form
-          className="sm:w-full md:w-7/10 flex flex-col md:justify-end justify-center items-center mt-4 px-10 py-3 gap-5"
+          className="sm:w-full md:w-3/4 flex flex-col justify-center items-center mt-4 mx-auto p-4"
           onSubmit={handleSubmit}
         >
-          <div className="w-full">
-            <CampoInput
-              label="Nome"
-              type="text"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Digite seu Nome"
-              name="name"
-            />
-            <CampoInput
-              label="Sobrenome"
-              type="text"
-              value={formData.surname}
-              onChange={handleChange}
-              placeholder="Digite seu Sobrenome"
-              name="surname"
-            />
+          <div className="w-full m-1">
+            <div className=" flex mt-12 sm:w-full sm:flex md:flex gap-2">
+              <CampoInput
+                label="Nome"
+                type="text"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Digite seu Nome"
+                name="name"
+              />
+              <CampoInput
+                label="Sobrenome"
+                type="text"
+                value={formData.surname}
+                onChange={handleChange}
+                placeholder="Digite seu Sobrenome"
+                name="surname"
+              />
+            </div>
+
             <CampoInput
               label="Email"
               type="email"
@@ -124,13 +128,14 @@ function Cadastro() {
           </div>
           <button
             type="submit"
-            className="my-3 bg-yellow-400 px-4 py-2 rounded-md w-full focus:outline-none"
+            className="my-1 bg-yellow-400 mx-auto py-2 rounded-md w-2/3 focus:outline-none font-semibold"
           >
             Cadastrar
           </button>
         </form>
       </main>
-      <div className="fixed bottom-0 w-full flex justify-center bg-stone-300">
+
+      <div className="fixed bottom-0 w-full flex justify-center bg-stone-300 p-3">
         <Footer />
       </div>
     </div>
